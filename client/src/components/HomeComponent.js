@@ -1,8 +1,23 @@
 import React from 'react'
 
+import ListComponent from './ListComponent'
+import CreateComponent from './CreateComponent';
 const HomeComponent = () =>{
     return(
-        <h1>HOME</h1>
+        <div>
+            <CreateComponent />
+            <table className="table">
+                <thead>
+                    <tr>
+                        <td>Author</td>
+                        <td>Actions Available</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <ListComponent />
+                </tbody>
+            </table>
+        </div>
     )
 }
 export default HomeComponent;

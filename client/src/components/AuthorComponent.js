@@ -6,9 +6,12 @@ import {Router} from '@reach/router'
 
 const AuthorComponent = () => {
     return(
-        <Router>
-            <HomeComponent path="/" />
-        </Router>
+        <div>
+            <h1>Favorite Authors</h1>
+            <Router>
+                <HomeComponent path="/" />
+            </Router>
+        </div>
     )
 }
 export default AuthorComponent;
